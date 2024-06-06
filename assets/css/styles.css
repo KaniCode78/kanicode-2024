@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fuentePrincipal: 'Montserrat', sans-serif;
+
+    --primario: #705F7D;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fondo: #b9abb2;
+    --complementoFondo: linear-gradient(75deg, #b9abb2 0%, #705f7d 50%, #0c0c0c 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    line-height: 2;
+    background-color: var(--fondo);
+    background-image: var(--complementoFondo);
+}
+
+
+/**globales**/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuentePrincipal);
+    line-height: 1.2;
+}
+
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+
+    font-size: 4rem;
+}
+
+h3 {
+
+    font-size: 3.2rem;
+}
+
+h4 {
+
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+/**utilidades**/
+
+.centrar-texto {
+    text-align: center;
+}
+
+/**utilidades**/
+
+nav {
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: rgba(112, 95, 125, .3);
+    height: 10rem;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 10px 50px;
+}
+
+.logo {
+    height: 8rem;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+    padding-top: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #F0F0F2;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    border-radius: 3px;
+
+}
+
+li a .oculto {
+    opacity: 0;
+    transition: .5s;
+}
+
+li a .oculto:hover {
+    opacity: 100%;
+}
+
+.header-texto h1 {
+    font-size: 15rem;
+}
+
+.oculto2{
+    opacity: 0;
+    transition: 5s;
+}
+
+.oculto2:hover{
+    opacity: 100%;
+}
+
+
+/* li a.active,
+li a:hover {
+    border-radius: 12px;
+    background: rgba(111, 123, 217, 0.5);
+    transition: .5s;
+} */
+
+.check-btn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.header-texto {
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 10rem;
+}
+
+
+
+.fondo__header {
+    background: url(/assets/img/pexels-pixabay-41949.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* .section{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 4%, rgba(112,95,125,1) 55%, rgba(255,255,255,1) 100%);
+height: 100vh;
+} */
+
+
+
+@media(max-width:952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .header-texto {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    li a .oculto {
+        opacity: 100%;
+    }
+
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+/*Estilos Main*/
+
+.faq {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+.faq h2 {
+    color: var(--blanco);
+    font-weight: lighter;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: center;
+}
+
+/*why*/
+
+.why {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
