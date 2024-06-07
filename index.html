@@ -26,6 +26,9 @@
                 <li><a href="#">S<span class="oculto">ervicios</span></a></li>
                 <li><a href="#">P<span class="oculto">ortafolios</span></a></li>
                 <li><a href="#">C<span class="oculto">ontacto</span></a></li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-calendar fa-bounce" ></i></a>
+                </li>
             </ul>
         </nav>
         <div class="header-texto">
@@ -80,10 +83,9 @@
         <div class="why">
             <div class="box__contenido">
                 <h2>¡Hablemos!</h2>
-                <p>Email</p>
-                <p>contacto@kanicode.website</p>
+                <p><strong>Email:</strong>contacto@kanicode.website</p>
                 <p>WhatsApp</p>
-                <p>+ 52 55 55 55 55 </p>
+                <p>+ 52 55 55 55 55</p>
 
                 <a href="https://www.facebook.com/kanicde/" aria-label="facebook">
                     <i class="fa-brands fa-square-facebook"></i>
@@ -100,19 +102,17 @@
                 <a href="#" aria-label="instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-
             </div>
-            <div class="box__img">
+            <div class="footer__side2">
                 <h2>Contacto</h2>
                 <p>¿Listo para llevar tu negocio al siguiente nivel sin complicaciones?</p>
-                <form action="">
-
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Telefono">
-                    <input type="text" placeholder="Mensaje">
+                <form class="form-container">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="correo" placeholder="Correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
                     <button type="submit">Enviar Mensaje</button>
                 </form>
+
             </div>
         </div>
     </footer>
