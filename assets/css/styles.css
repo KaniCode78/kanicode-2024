@@ -330,6 +330,14 @@ height: 100vh;
 
 /*footer*/
 
+
+footer .box__contenido{
+    padding-right: 4rem;
+}
+
+
 footer i{
     font-size: 3rem;
+    padding: 2rem;
+    
 }
