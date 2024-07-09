@@ -187,6 +187,9 @@ li a:hover {
     padding-top: 10rem;
 }
 
+.header-texto h1 {
+    text-align: center;
+}
 
 
 .fondo__header {
@@ -361,6 +364,7 @@ footer .box__contenido {
 footer i {
     font-size: 3rem;
     padding: 2rem;
+    color: var(--blanco);
 }
 
 @media (max-width: 768px) {}
@@ -478,4 +482,62 @@ footer .footer__side2 {
         grid-column: span 1;
         /* Los elementos ocupan una columna */
     }
+}
+
+/* Pag. Nosotros*/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.text_header{
+    color: var(--blanco);
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+   }
+
+
+
+.img_header i{
+    color: var(--blanco);
+    
+    
+}
+
+
+
+
+
+
+
+.nosotros_caja{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_nosotros{
+    flex-basis: 60%;
+}
+
+
+.tex_nosotros{
+    flex-basis: 40%;
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+   
+
 }
