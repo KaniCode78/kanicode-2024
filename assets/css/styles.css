@@ -190,10 +190,21 @@ li a .oculto:hover {
 .header-texto i {
     display: flex;
     font-size: 10rem;
-    padding-top: 20rem;
+
     justify-content: space-between;
     justify-content: center;
 }
+
+
+
+
+.header-texto span {
+    font-size: 10rem;
+    color: var(--blanco);
+    padding-top: 20rem;
+    
+}
+
 
 /* .oculto2 {
     opacity: 0;
