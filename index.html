@@ -7,6 +7,9 @@
     <title>KaniCode</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/93e19d243d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -33,6 +36,8 @@
         </ul>
     </nav>
 
+    <!-- Inici Header -->
+
     <header class="fondo__header">
         <div class="header-texto centrar-texto" id="seccion1">
             <h1>
@@ -47,32 +52,27 @@
                     arrow_downward
                 </span>
             </a>
+        </div>
+    </header>
 
+    <!-- Fin header -->
+
+    <!-- Inicia seccion 2 -->
+    <div class="faq seccion" id="seccion2">
+
+        <div class="texto_seccion2">
+            <h2>No pierdas más clientes, transmite seguridad con tu sitio web e incrementa tus ventas.</h2>
         </div>
 
-    </header>
+    </div>
+
+    <!-- Termina seccion 2 -->
+
+
+
     <main>
 
 
-
-
-
-
-
-
-
-        <section class="faq section" id="seccion2">
-            <div class="texto_seccion2">
-                <h2>No pierdas más clientes, transmite seguridad con tu sitio web e incrementa tus ventas.</h2>
-            </div>
-            <div class="flecha_abajo">
-                <a href="#seccion3" aria-label="siguiente">
-                    <span class="material-symbols-outlined icon">
-                        arrow_downward
-                    </span>
-                </a>
-            </div>
-        </section>
 
         <div class="why">
             <div class="box section" id="seccion3">
@@ -85,6 +85,7 @@
                 <div class="box__img">
                     <img src="./assets/img/_why/1.jpg" alt="Foto de Hal Gatewood en Unsplash">
                 </div>
+
             </div>
             <!--  <div>
                 
@@ -141,17 +142,34 @@
             <div class="footer__side2">
                 <h2>Contacto</h2>
                 <p>¿Listo para llevar tu negocio al siguiente nivel sin complicaciones?</p>
-                <form class="form-container" action="https://formsubmit.co/contacto@kanicode.website" method="POST">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Correo" required>
-                    <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">from_name</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="to_name">to_name</label>
+                        <input type="text" name="to_name" id="to_name">
+                    </div>
+                    <div class="field">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                        <label for="reply_to">reply_to</label>
+                        <input type="text" name="reply_to" id="reply_to">
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
                 </form>
             </div>
         </div>
     </footer>
 
-
+    <script type="text/javascript">
+        emailjs.init('ebrEA9GDgqSZ771TG')
+    </script>
+    <script src="./assets/js/appm.js"></script>
 
 </body>
 
