@@ -144,24 +144,30 @@
                 <p>¿Listo para llevar tu negocio al siguiente nivel sin complicaciones?</p>
                 <form id="form">
                     <div class="field">
-                        <label for="from_name">from_name</label>
-                        <input type="text" name="from_name" id="from_name">
+                        <label for="from_name">Nombre</label>
+                        <input type="text" name="from_name" id="from_name" required>
                     </div>
                     <div class="field">
-                        <label for="to_name">to_name</label>
-                        <input type="text" name="to_name" id="to_name">
+                        <label for="from_tel">Telefono</label>
+                        <input type="tel" name="from_tel" id="from_tel" pattern="[0-9]{10}" required>
                     </div>
                     <div class="field">
-                        <label for="message">message</label>
-                        <input type="text" name="message" id="message">
+                        <label for="from_mail">Correo</label>
+                        <input type="email" name="from_mail" id="from_mail" required>
                     </div>
                     <div class="field">
-                        <label for="reply_to">reply_to</label>
-                        <input type="text" name="reply_to" id="reply_to">
+                        <label for="message">Mensaje</label>
+                        <textarea type="text" name="message" id="message" rows="4"></textarea>
+                        <div id="word_count">0 / 200 palabras</div>
                     </div>
-
                     <input type="submit" id="button" value="Send Email">
                 </form>
+                <div id="overlay"></div>
+                <div class="custom-alert" id="customAlert">
+                    <h2>Alert</h2>
+                    <p>This is a custom alert message.</p>
+                    <button onclick="closeAlert()">OK</button>
+                </div>
             </div>
         </div>
     </footer>
@@ -170,7 +176,7 @@
         emailjs.init('ebrEA9GDgqSZ771TG')
     </script>
     <script src="./assets/js/appm.js"></script>
-
+  
 </body>
 
 </html>
