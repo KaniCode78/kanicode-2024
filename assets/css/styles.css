@@ -430,8 +430,9 @@ footer .footer__side2 {
     text-align: center;
 }
 
+/*estilos form*/
 
-/* .form-container {
+.form-container {
     background-color: var(--fondo);
     padding: 20px;
     border-radius: 8px;
@@ -445,105 +446,60 @@ footer .footer__side2 {
 
 .form-container input[type="text"],
 .form-container input[type="email"],
+.form-container input[type="tel"],
 .form-container textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
-.form-container textarea {
+.form-container label{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-family: var(--fuentePrincipal);
+}
+
+.field1 {
     grid-column: span 2;
-    resize: vertical;
+    margin-bottom: 5px;
 }
 
-.form-container button {
+.field2{
+    grid-column: span 2;
+    margin-bottom: 5px;
+}
+
+.field3 {
+    grid-column: span 2;
+    margin-bottom: 5px;
+}
+
+.field4 {
+    grid-column: span 2;
+    margin-bottom: 5px;
+}
+
+.button {
     grid-column: span 2;
     padding: 10px;
     border: none;
     background-color: var(--primario);
-    color: var(--negro);
-    font-size: 2rem;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.6rem;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.form-container button:hover {
-    background-color: var(--fondo);
-}
-
-.field {
-    margin-bottom: 10px;
-}
-
-.field label {
-    display: block;
-    font-size: 12px;
-    color: #777;
-}
-
-.field input {
-    display: block;
-    min-width: 250px;
-    line-height: 1.5;
-    font-size: 14px;
-}
-
-input[type="submit"] {
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #ebedf5;
+.button:hover {
     color: var(--negro);
-    border: none
-} */
-
-
-
-background-color: #ffffff;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
 }
 
-.field {
-margin-bottom: 15px;
-}
 
-.field label {
-display: block;
-margin-bottom: 5px;
-font-weight: bold;
-}
 
-.field input, .field textarea {
-width: calc(100% - 20px);
-padding: 10px;
-border: 1px solid #ddd;
-border-radius: 5px;
-box-sizing: border-box;
-}
-
-.field textarea {
-resize: none;
-}
-
-#button {
-width: 100%;
-padding: 10px;
-background-color: #4CAF50;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
-}
-
-#button:hover {
-background-color: #45a049;
-}
+/* Estilos para caja de alertas */
 
 #word_count {
 font-size: 12px;
@@ -558,7 +514,7 @@ margin-top: -10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color:var(--primario);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -576,8 +532,8 @@ margin-top: -10px;
 
 .custom-alert button {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color:var(--fondo);
+    color: var(--negro);
     border: none;
     border-radius: 5px;
     cursor: pointer;

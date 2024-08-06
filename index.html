@@ -142,31 +142,39 @@
             <div class="footer__side2">
                 <h2>Contacto</h2>
                 <p>¿Listo para llevar tu negocio al siguiente nivel sin complicaciones?</p>
-                <form id="form">
-                    <div class="field">
+
+                <form class="form-container" id="form">
+
+                    <div class="field1">
                         <label for="from_name">Nombre</label>
                         <input type="text" name="from_name" id="from_name" required>
                     </div>
-                    <div class="field">
+
+                    <div class="field2">
                         <label for="from_tel">Telefono</label>
                         <input type="tel" name="from_tel" id="from_tel" pattern="[0-9]{10}" required>
                     </div>
-                    <div class="field">
+                    
+                    <div class="field3">
+
                         <label for="from_mail">Correo</label>
                         <input type="email" name="from_mail" id="from_mail" required>
                     </div>
-                    <div class="field">
+
+                    <div class="field4">
                         <label for="message">Mensaje</label>
-                        <textarea type="text" name="message" id="message" rows="4"></textarea>
-                        <div id="word_count">0 / 200 palabras</div>
+                        <textarea class="box_text" type="text" name="message" id="message" rows="4" required></textarea>
+                        <div id="word_count">0 / 200 </div>
                     </div>
-                    <input type="submit" id="button" value="Send Email">
+
+                    <input class="button" type="submit" id="button" value="Enviar">
                 </form>
+
                 <div id="overlay"></div>
                 <div class="custom-alert" id="customAlert">
-                    <h2>Alert</h2>
-                    <p>This is a custom alert message.</p>
-                    <button onclick="closeAlert()">OK</button>
+                    <h2>Mensaje Enviado</h2>
+                    <p>Siguenos en nuestras redes sociales</p>
+                    <button onclick="closeAlert()">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -176,7 +184,7 @@
         emailjs.init('ebrEA9GDgqSZ771TG')
     </script>
     <script src="./assets/js/appm.js"></script>
-  
+
 </body>
 
 </html>
