@@ -5,80 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaniCode</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/agenda.css">
     <script src="https://kit.fontawesome.com/93e19d243d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
 </head>
 
 <body>
-    <!-- Inicia el menu -->
-    <nav class="nav__header">
-        <input type="checkbox" id="check" aria-label="none">
-        <label for="check" class="check-btn">
-            <i class="fa-solid fa-list-ul"></i>
-        </label>
-        <a href="#" class="enlace" aria-label="boton">
-            <img src="./assets/img/Logo KC_White_v2.png" alt="" class="logo">
-        </a>
 
-        <ul>
-            <a href="#seccion1">
-                <li>
-                    <p>I<span class="oculto">nicio</span></p>
-                </li>
-            </a>
-
-            <a href="./assets/html/nosotros.html">
-                <li>
-                    <p>N<span class="oculto">osotros</span></p>
-                </li>
-            </a>
-
-            <a href="#seccion3">
-                <li>
-                    <p>S<span class="oculto">ervicios</span></p>
-                </li>
-            </a>
-
-            <a href="#seccion4">
-                <li>
-                    <p>P<span class="oculto">ortafolios</span></p>
-                </li>
-            </a>
-
-            <a href="#seccion5">
-                <li>
-                    <p>C<span class="oculto">ontacto</span></p>
-                </li>
-            </a>
-
-            <a href="/assets/html/agenda.html" aria-label="agenda">
-                <li>
-                    <i class="fa-regular fa-calendar "></i>
-                </li>
-            </a>
-
-        </ul>
-
-    </nav>
-    <!-- Termina el menu -->
-
-    <!-- Inici Header -->
+<!-- Inicio Header -->
 
     <header class="fondo__header">
+        <!-- Inicia el menu -->
+        <nav class="nav__menu">
+            <input type="checkbox" id="check" aria-label="none">
+            <label for="check" class="check-btn">
+                <i class="fa-solid fa-list-ul"></i>
+            </label>
+            <a href="#" class="enlace" aria-label="boton">
+                <img src="./assets/img/Logo KC_White_v2.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <p>I<span class="oculto">nicio</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./assets/html/nosotros.html">
+                        <p>N<span class="oculto">osotros</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion3">
+                        <p>S<span class="oculto">ervicios</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion4">
+                        <p>P<span class="oculto">ortafolios</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion5">
+                        <p>C<span class="oculto">ontacto</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/assets/html/agenda.html" aria-label="agenda">
+                        <i class="fa-regular fa-calendar "></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Termina el menu -->
+
         <div class="header-texto centrar-texto" id="seccion1">
-            <h1>
+            <h1 class="efecto">
                 Tu W<span class="oculto2">eb</span>
             </h1>
-            </br>
-            <h1>
+         <h2>+</h2>
+            <h1 class="efecto">
                 Tu E<span class="oculto2">stilo</span>
             </h1>
+
             <a href="#seccion2" aria-label="siguiente">
                 <span class="material-symbols-outlined icon">
                     arrow_downward
