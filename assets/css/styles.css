@@ -147,7 +147,6 @@ li a .oculto:hover {
     justify-content: center;
     color: white;
     text-align: center;
-    margin-top: 100px;
 }
 
 .header-texto h2{
@@ -164,15 +163,8 @@ li a .oculto:hover {
 .header-texto span {
     font-size: 10rem;
     color: var(--blanco);
-    padding-bottom: -10rem;
+  
 }
-
-.oculto2 {
-    opacity: 2;
-    transition: .1s;
-    color: var(--blanco);
-}
-
 
 
 
